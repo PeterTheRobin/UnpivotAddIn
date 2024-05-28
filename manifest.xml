@@ -17,6 +17,7 @@
     <AppDomain>https://petertherobin.github.io/UnpivotAddIn/</AppDomain>
   </AppDomains>
   
+  
 
   <Hosts>
     <Host Name="Workbook"/>
