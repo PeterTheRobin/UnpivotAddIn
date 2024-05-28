@@ -3,14 +3,13 @@
   <Id>0f328d10-99f2-49be-9f5d-e86aca625bb9</Id>
   <Version>1.0.0.0</Version>
 
-  <ProviderName>Contoso</ProviderName>
+  <ProviderName>PeterTheRobin</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Unpivot"/>
   <Description DefaultValue="Unpivot Data"/>
 
-  <IconUrl DefaultValue="https://localhost:3000/assets/icon-32.png"/>
-  <HighResolutionIconUrl DefaultValue="https://localhost:3000/assets/icon-64.png"/>
-
+  <IconUrl DefaultValue="icons/table-32.png"/>
+  <HighResolutionIconUrl DefaultValue="icons/table-80.png"/>
 
   <SupportUrl DefaultValue="https://github.com/PeterTheRobin/UnpivotAddIn"/>
   
@@ -43,6 +42,7 @@
             <OfficeTab id="TabData">
               <Group id="CommandsGroup">
                 <Label resid="CommandsGroup.Label"/>
+                
                 <Icon>
                   <bt:Image size="16" resid="Icon.16x16"/>
                   <bt:Image size="32" resid="Icon.32x32"/>
@@ -55,15 +55,18 @@
                 <Control xsi:type="Button" id="UnpivotButton">
                   
                   <Label resid="UnpivotButton.Label"/>
+
                   <Supertip>
                     <Title resid="UnpivotButton.Label"/>
                     <Description resid="UnpivotButton.Tooltip"/>
                   </Supertip>
+
                   <Icon>
                     <bt:Image size="16" resid="Icon.16x16"/>
                     <bt:Image size="32" resid="Icon.32x32"/>
                     <bt:Image size="80" resid="Icon.80x80"/>
                   </Icon>
+
                   <Action xsi:type="ExecuteFunction">
                     <FunctionName>unpivotRange</FunctionName>
                   </Action>
@@ -83,12 +86,16 @@
 
     <Resources>
 
+
+  
       <bt:Images>
-        <bt:Image id="Icon.16x16" DefaultValue="https://localhost:3000/assets/icon-16.png"/>
-        <bt:Image id="Icon.32x32" DefaultValue="https://localhost:3000/assets/icon-32.png"/>
-        <bt:Image id="Icon.80x80" DefaultValue="https://localhost:3000/assets/icon-80.png"/>
+        <bt:Image id="Icon.16x16" DefaultValue="icons/table-16.png"/>
+        <bt:Image id="Icon.32x32" DefaultValue="icons/table-32.png"/>
+        <bt:Image id="Icon.80x80" DefaultValue="icons/table-80.png"/>
       </bt:Images>
-      
+
+
+
       <bt:Urls>
         <bt:Url id="Commands.Url" DefaultValue="https://petertherobin.github.io/UnpivotAddIn/"/>
       </bt:Urls>
